@@ -9,7 +9,7 @@ asyncScheduler.schedule(greet, 5000);
 //Pass parameters as object in third position. State of observer
 asyncScheduler.schedule(greetTo, 5000, { name: "Andres", age: 25 });
 
-// Async with recursion
+// Async with recursion as interval
 const subs = asyncScheduler.schedule(
   function (name) {
     console.log(`Hello ${name} at ${Date.now()}`);

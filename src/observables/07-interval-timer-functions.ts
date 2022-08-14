@@ -6,8 +6,6 @@ const observer = {
   error: (err) => console.log("error:", err),
 };
 
-
-
 // asynchronous
 const interval$ = interval(1000);
 const timer$ = timer(2500, 1000);
