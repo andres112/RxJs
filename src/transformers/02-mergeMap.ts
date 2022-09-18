@@ -21,9 +21,10 @@ const mouseDown$ = fromEvent(document, 'mousedown');
 const mouseUp$ = fromEvent(document, 'mouseup');
 
 mouseDown$
-    .pipe(mergeMap(() => interval()
+    .pipe(
+      mergeMap(() => interval()
         .pipe(takeUntil(mouseUp$))
-        )
+      )
     )
 .subscribe({
   next: (value) => console.log(value),
