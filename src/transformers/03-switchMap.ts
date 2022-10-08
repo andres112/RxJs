@@ -1,7 +1,7 @@
 import { fromEvent, Observable } from 'rxjs';
 import { debounceTime, map, switchMap } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax';
-import { GithubUsers, GithubUser } from './interfaces/github-users.interface';
+import { GithubUsers, GithubUser } from '../interfaces/github-users.interface';
 
 const body = document.querySelector('body');
 const input = document.createElement('input');
