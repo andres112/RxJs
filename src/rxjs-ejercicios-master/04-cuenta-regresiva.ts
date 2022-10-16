@@ -1,17 +1,4 @@
-import { interval } from 'rxjs';
-
-/**
- * Ejercicio: Realizar una cuenta regresiva
- * empezando de 7
- */
-
-// Salida esperada ===
-// 7
-// 6
-// 5
-// 4
-// 3
-// 2import { interval, map } from 'rxjs';
+import { interval, map } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 
 /**
